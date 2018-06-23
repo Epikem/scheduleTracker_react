@@ -5,8 +5,7 @@ class App extends Component {
     employees: []
   };
   render() {
-    return <div className="App">{/* DashBoard
-      Schedule */}</div>;
+    return <div>Hello, World!</div>;
   }
 }
 
