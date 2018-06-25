@@ -1,0 +1,148 @@
+[
+    {
+      "index": 0,
+      "id" : "952113783",
+      "name": "Jeannine Stein",
+      "rank": "A",
+      "section" : "Supervisor",
+      "schedule" :{
+            "week-01" : {
+                "mon" : "Normal",
+                "tue" : "Normal",
+                "wed" : "Training",
+                "thu" : "Training",
+                "fri" : "Normal",
+                "sat" : "Weekend OT",
+                "sun" : "Normal"
+          },
+          "week-02" : {
+            "mon" : "Normal",
+            "tue" : "Normal",
+            "wed" : "Normal",
+            "thu" : "Normal",
+            "fri" : "Normal",
+            "sat" : "Normal",
+            "sun" : "Normal"
+        },
+          "week-03" : {
+            "mon" : "Normal",
+            "tue" : "Normal",
+            "wed" : "Normal",
+            "thu" : "Normal",
+            "fri" : "Normal",
+            "sat" : "Normal",
+            "sun" : "Normal"
+        }
+      }
+    },
+    {
+      "index": 1,
+      "id" : "952114783",
+      "name": "Kris Robbins",
+      "rank": "B",
+      "section" : "Frontend",
+      "schedule" :{
+          "week-01" : {
+              "mon" : "Normal",
+              "tue" : "Normal",
+              "wed" : "Normal",
+              "thu" : "Normal",
+              "fri" : "Normal",
+              "sat" : "Weekend OT",
+              "sun" : "Normal"
+          },
+          "week-02" : {
+            "mon" : "Business Trip",
+            "tue" : "Business Trip",
+            "wed" : "Business Trip",
+            "thu" : "Business Trip",
+            "fri" : "Business Trip",
+            "sat" : "Weekend OT",
+            "sun" : "Normal"
+        },
+          "week-03" : {
+            "mon" : "Normal",
+            "tue" : "Normal",
+            "wed" : "Normal",
+            "thu" : "Normal",
+            "fri" : "Normal",
+            "sat" : "Weekend OT",
+            "sun" : "Normal"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "name": "Ines Winters",
+       "id" : "952134783",
+      "rank": "B",
+      "section" : "Backend",
+      "schedule" :{
+          "week-01" : {
+              "mon" : "Normal",
+              "tue" : "Normal",
+              "wed" : "Normal",
+              "thu" : "Normal",
+              "fri" : "Normal",
+              "sat" : "Normal",
+              "sun" : "Normal"
+          },
+          "week-02" : {
+            "mon" : "Normal",
+            "tue" : "Normal",
+            "wed" : "Business Trip",
+            "thu" : "Business Trip",
+            "fri" : "Normal",
+            "sat" : "Normal",
+            "sun" : "Normal"
+        },
+          "week-03" : {
+            "mon" : "Normal",
+            "tue" : "Normal",
+            "wed" : "Normal",
+            "thu" : "Normal",
+            "fri" : "Normal",
+            "sat" : "Weekend OT",
+            "sun" : "Normal"
+        }
+      }
+    },
+    {
+      "index": 3,
+       "id" : "972114783",
+      "name": "Bray Hurley",
+      "rank": "C",
+      "section" : "Frontend",
+      "schedule" :{
+          "week-01" : {
+              "mon" : "Normal",
+              "tue" : "Normal",
+              "wed" : "Normal",
+              "thu" : "Normal",
+              "fri" : "Normal",
+              "sat" : "Normal",
+              "sun" : "Normal"
+          },
+          "week-02" : {
+            "mon" : "Normal",
+            "tue" : "Normal",
+            "wed" : "Normal",
+            "thu" : "Normal",
+            "fri" : "Normal",
+            "sat" : "Normal",
+            "sun" : "Normal"
+        },
+          "week-03" : {
+            "mon" : "Normal",
+            "tue" : "Normal",
+            "wed" : "Normal",
+            "thu" : "On Leave",
+            "fri" : "On Leave",
+            "sat" : "Weekend OT",
+            "sun" : "Weekend OT"
+        }
+      }
+    } 
+  ]
+
+  
