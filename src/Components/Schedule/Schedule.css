@@ -1,3 +1,11 @@
-.header{
-    background-color : #EEE;    
+div{
+    margin-top : 10px;
+    padding : 15px;
+    width : 100%;
+    box-sizing : border-box;
+}
+th{
+    width: 10% !important;
+    margin : 0 !important;
+    padding : 5px !important;
 }

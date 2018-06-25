@@ -1,0 +1,7 @@
+tr > *{
+    border : 0.05em solid grey !important;
+}
+
+tr:nth-child(2n+1){
+    background-color : rgba(170, 170, 170, 0.3);
+}
