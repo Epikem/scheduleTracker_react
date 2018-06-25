@@ -8,7 +8,7 @@ class Schedule extends Component {
     scheduleData: data
   };
 
-  changeHandler = event => {
+  sortHandler = event => {
     let sortedData = data.sort((a, b) => {
       return a[event.target.firstChild.nodeValue.toLowerCase()].localeCompare(
         b[event.target.firstChild.nodeValue.toLowerCase()]
@@ -28,7 +28,7 @@ class Schedule extends Component {
           key={person.id}
           name={person.name}
           rank={person.rank}
-          section={person.rank}
+          section={person.section}
         />
       );
     });
@@ -38,9 +38,9 @@ class Schedule extends Component {
         <table className="centered">
           <thead>
             <tr className="blue lighten-4">
-              <th onClick={this.changeHandler}>Name</th>
-              <th onClick={this.changeHandler}>Rank</th>
-              <th onClick={this.changeHandler}>Section</th>
+              <th onClick={this.sortHandler}>Name</th>
+              <th onClick={this.sortHandler}>Rank</th>
+              <th onClick={this.sortHandler}>Section</th>
               <th>Monday</th>
               <th>Tuesday</th>
               <th>Wednesday</th>
