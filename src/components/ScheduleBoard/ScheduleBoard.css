@@ -1,16 +1,10 @@
 .schedule-board {
     width: 80%;
     margin: auto;
-    
 }
 .schedule-table{
-    width: 100%;
-    overflow-x:auto;
     border-collapse: collapse;
-}
-.schedule-table td, .schedule-table th{
-    border: 1px solid #ddd;
-    padding: 15px;
+    border: 1px solid #aaa;
 }
 .divider{
     width: 0;
@@ -19,9 +13,6 @@
 .schedule-table .header{
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
 }
 .col1{
     width: 12%;

@@ -1,49 +1,47 @@
 import React from 'react';
 import './ScheduleBoard.css';
-
-const ScheduleBoard = ({ db, children }) => {
-    console.log(db);
+const ScheduleRow = (props) => {
+    const week = props.week;
+    const {name, rank, section, schedule} = props.children;
+    return (
+        <tr>
+            <td>{name}</td>
+            <td>{rank}</td>
+            <td>{section}</td>
+            <td>{schedule[week].mon}</td>
+            <td>{schedule[week].tue}</td>
+            <td>{schedule[week].wed}</td>
+            <td>{schedule[week].thu}</td>
+            <td>{schedule[week].fri}</td>
+            <td>{schedule[week].sat}</td>
+            <td>{schedule[week].sun}</td>
+        </tr>
+    );
+}
+const ScheduleBoard = ({ db, week }) => {
     return (
         <div className='schedule-board'>
-            <table className='schedule-table'>
+            <table className='schedule-table highlight centered' >
                 <colgroup>
-                    <col className="col1"/>
-                    <col className="col1"/>
-                    <col className="col1"/>
-                    <col className="col2"/>
-                    <col className="col2"/>
-                    <col className="col2"/>
-                    <col className="col2"/>
-                    <col className="col2"/>
-                    <col className="col2"/>
-                    <col className="col2"/>
+                    <col className='col1' span='3'/>
+                    <col className='col2' span='7'/>
                 </colgroup> 
-                <tbody>
-                    <tr className='header'>
+                <thead>
+                    <tr className='header green lighten-5'>
                         <th>Name</th>
                         <th>Rank</th>
                         <th>Section</th>
-                        <th>Sun</th>
                         <th>Mon</th>
                         <th>Tue</th>
                         <th>Wed</th>
                         <th>Thu</th>
                         <th>Fri</th>
                         <th>Sat</th>
+                        <th>Sun</th>
                     </tr>
-                    <tr>
-                        <td>Name</td>
-                        <td>Rank</td>
-                        <td>Section</td>
-                        <td>Sun</td>
-                        <td>Mon</td>
-                        <td>Tue</td>
-                        <td>Wed</td>
-                        <td>tdu</td>
-                        <td>Fri</td>
-                        <td>Sat</td>
-                    </tr>
-                    {children}
+                </thead>
+                <tbody>
+                    {db.map((rowData)=>{return <ScheduleRow key={rowData.index} week={week}>{rowData}</ScheduleRow>})}
                 </tbody>
             </table>
         </div>
