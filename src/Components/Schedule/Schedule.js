@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Member from '../Member/Member'
 import data from '../../data.json'
-
+import './Schedule.css'
 
 class Schedule extends Component{
 
@@ -10,14 +10,14 @@ class Schedule extends Component{
     }
     
     render(){
-        let scheduleData = this.state.scheduleData.map(person=>{
-            return <Member key = {person.id} name = {person.name} rank = {person.rank} section = {person.rank}/>
+        let scheduleData = this.state.scheduleData.map((person,index)=>{
+            return <Member index={index} key = {person.id} name = {person.name} rank = {person.rank} section = {person.rank}/>
         })
 
     return (
-        <table>
+        <table className="centered">
             <thead>
-                <tr>
+                <tr className="blue lighten-4">
                     <th>Name</th>
                     <th>Rank</th>
                     <th>Section</th>
