@@ -9,7 +9,7 @@ const Member = (props) =>{
             <td className="center">{props.name}</td>
             <td className="center">{props.rank}</td>
             <td className="center">{props.section}</td>
-            <td className="center">data</td>
+            <td colspan="7" className="center">data</td>
         </tr>
     )
 
