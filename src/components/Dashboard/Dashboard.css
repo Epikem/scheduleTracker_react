@@ -1,0 +1,9 @@
+.dashboard{
+    background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+}
+.week-select{
+    margin: 10px;
+    min-width: 120;
+}
