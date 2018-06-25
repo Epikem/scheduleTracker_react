@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import Member from '../Member/Member'
 import data from '../../data.json'
-import '../../../node_modules/materialize-css/dist/css/materialize.css'
-import 'materialize-css'
+
 
 class Schedule extends Component{
 
@@ -16,7 +15,7 @@ class Schedule extends Component{
         })
 
     return (
-        <table className='highlight'>
+        <table>
             <thead>
                 <tr>
                     <th>Name</th>
