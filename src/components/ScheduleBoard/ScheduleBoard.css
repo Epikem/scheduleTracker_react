@@ -25,3 +25,8 @@
 .col2 {
     width: 9%;
 }
+
+th>p {
+    display: inline-flex;
+    vertical-align: middle;
+}
