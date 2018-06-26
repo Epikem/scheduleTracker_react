@@ -2,21 +2,31 @@
     width: 80%;
     margin: auto;
 }
-.schedule-table{
+
+.schedule-table {
     border-collapse: collapse;
     border: 1px solid #aaa;
 }
-.divider{
+
+.divider {
     width: 0;
     border-left: #000;
 }
-.schedule-table .header{
+
+.schedule-table .header {
     padding-top: 12px;
     padding-bottom: 12px;
 }
-.col1{
+
+.col1 {
     width: 12%;
 }
-.col2{
+
+.col2 {
     width: 9%;
+}
+
+th>p {
+    display: inline-flex;
+    vertical-align: middle;
 }
