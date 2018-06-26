@@ -7,10 +7,14 @@ class App extends Component {
     week: 'week-01',
     employees: []
   };
+
+  handleWeekChange = (event) => {
+    this.setState({value: event.target.value}, ()=>{console.log(this.state)});
+  }
+
   render() {
-    // TODO: sync Dashboard and ScheduleBoard's week state
     return <div>
-      <Dashboard/>
+      <Dashboard handleWeekChange={this.handleWeekChange}></Dashboard>
       <ScheduleBoard db={db} week={this.state.week}/>
     </div>;
   }
