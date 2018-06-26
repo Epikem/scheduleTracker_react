@@ -6,6 +6,10 @@ div{
 }
 th{
     width: 10% !important;
+    min-width : 150px !important;
     margin : 0 !important;
     padding : 5px !important;
+}
+th:hover{
+    background-color: #3784b8;
 }

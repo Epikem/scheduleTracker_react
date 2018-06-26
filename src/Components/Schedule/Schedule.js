@@ -4,20 +4,29 @@ import data from "../../data.json";
 import "./Schedule.css";
 
 class Schedule extends Component {
+ 
   state = {
-    scheduleData: data
+    scheduleData: data,
+    sortBy:'name',
+    sortOrder : 1
   };
 
   sortHandler = event => {
-    let sortedData = data.sort((a, b) => {
-      return a[event.target.firstChild.nodeValue.toLowerCase()].localeCompare(
-        b[event.target.firstChild.nodeValue.toLowerCase()]
-      );
+    let currentState = {...this.state}
+    currentState.sortOrder = -currentState.sortOrder;
+    currentState.sortBy = event.target.className;
+    console.log(event.target)
+    // currentState.sortBy = event.target.firstChild.nodeValue.toLowerCase();
+    currentState.scheduleData.sort((a, b) => {
+      return currentState.sortOrder*a[currentState.sortBy].localeCompare(b[currentState.sortBy]);
     });
-    console.log(sortedData);
+    
     this.setState({
-      scheduleData: sortedData
+      scheduleData: currentState.scheduleData,
+      sortBy : currentState.sortBy,
+      sortOrder : currentState.sortOrder
     });
+    console.log(this.state)
   };
 
   render() {
@@ -38,9 +47,9 @@ class Schedule extends Component {
         <table className="centered">
           <thead>
             <tr className="blue lighten-4">
-              <th onClick={this.sortHandler}>Name</th>
-              <th onClick={this.sortHandler}>Rank</th>
-              <th onClick={this.sortHandler}>Section</th>
+              <th className="name" onClick={this.sortHandler}>Name</th>
+              <th className="rank" onClick={this.sortHandler}>Rank</th>
+              <th className="section" onClick={this.sortHandler}>Section</th>
               <th>Monday</th>
               <th>Tuesday</th>
               <th>Wednesday</th>
